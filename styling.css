@@ -1,0 +1,102 @@
+body{
+    margin: 0; /*removing any prior margin*/
+    box-sizing: border-box;
+}
+
+#header-content{ /*The below codes: justify-content divides the divs into 3*/
+    background: white;
+    display: flex;
+    flex-direction: inherit;
+    /*flex-wrap: nowrap;*/
+    justify-content: space-between;
+    height: 40px;
+    border-bottom: thin solid rgb(201, 194, 194);
+}
+
+#nav-logo{
+    display: flex;
+    float: left;
+    margin-top: 10px;
+}
+
+#header-icons{
+    display: flex;
+    margin-top: 7px;
+}
+
+#search-bar{
+    width: 300px;
+    height: 80%;
+    background: whitesmoke;
+    border-color: white;
+    padding: inherit;  
+}
+
+#input-search{
+    display: flex;
+    margin-top: 3px;
+}
+
+#search-btn{
+    margin-left: 0;
+    margin-top: 3px;
+    width: 50px;
+    height: 30px;
+    background: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.center-head{
+    display: flex;
+    margin-left: 0;
+}
+
+.left-head{
+    display: flex;
+    float: left;
+    margin-right: 20px;
+}
+
+.right-head{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#row{
+    background-color: blue;
+    display: flex;
+    flex-direction: row; /*there is a bug that I still can't figure out why flex-wrapping with flex doesnt align the columns accordingly*/
+    @media screen and (max-width: 1000px){
+        flex-direction: column;
+    }
+}
+
+#column{
+    flex: 50%;
+    @media screen and (max-width: 992px){
+        flex: 50%;
+    }
+}
+
+/*Making the videos responsive to screen size*/
+
+#yt-video{
+    flex: 50%;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+
+#video-up-next{
+    flex: 50%;
+    padding: 20px;
+    margin-right: 20px;
+    border-bottom: thin solid white;
+    display: flex;
+}
+
+.video-info{
+    margin-left: 10px;
+    text-align: justify;
+}
